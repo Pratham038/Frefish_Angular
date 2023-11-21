@@ -1,0 +1,59 @@
+<h1>Add New Product</h1>
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <label for="product_id">Product ID:</label><br />
+  <input type="text" id="product_id" formControlName="id" /><br /><br />
+
+  <label for="product_name">Product Name:</label><br />
+  <input type="text" id="product_name" formControlName="name" /><br /><br />
+
+  <label for="price">Price:</label><br />
+  <input type="text" id="price" formControlName="price" /><br /><br />
+
+  <label for="description">Description:</label><br />
+  <textarea id="description" formControlName="description"></textarea
+  ><br /><br />
+
+  <label for="product_stock">Product Stock:</label><br />
+  <input type="number" id="product_stock" formControlName="stock" /><br /><br />
+
+  <label for="product_reviews">Product Reviews:</label><br />
+  <input
+    type="text"
+    id="product_reviews"
+    formControlName="reviews"
+  /><br /><br />
+  <!-- ============================ -->
+
+  <!-- ========================== -->
+  <label for="product_rating">Product Rating:</label><br />
+  <input
+    type="number"
+    id="product_rating"
+    formControlName="stars"
+    step="0.1"
+    min="0"
+    max="5"
+  /><br /><br />
+
+  <label for="advertise">Advertise:</label><br />
+  <select id="advertise" formControlName="featured">
+    <option value="true">Yes</option>
+    <option value="false">No</option></select
+  ><br /><br />
+
+  <label for="product_category">Product Category:</label><br />
+  <input
+    type="text"
+    id="product_category"
+    formControlName="category"
+  /><br /><br />
+
+  <label for="product_image">Product Image Link:</label><br />
+  <input type="text" id="product_image" formControlName="image" /><br /><br />
+  <br />
+
+  <label for="product_quantity">Product Quantity:</label><br />
+  <input type="text" id="product_quantity" formControlName="quantity" />
+  <input type="submit" value="Submit" />
+</form>

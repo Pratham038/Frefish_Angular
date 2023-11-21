@@ -1,0 +1,19 @@
+<div class="productscontainer">
+  <!-- ======================== -->
+  <!-- <div class="card" *ngFor="let item of data">
+    <img [src]="item.image" alt="dfs" />
+    <h3>Name: {{ item.name }}</h3>
+    <p>Category :{{ item.category }}</p>
+    <h2>Price:{{ item.price }}</h2>
+  </div> -->
+  <!-- ============================= -->
+
+  <app-productcard
+    *ngFor="let item of data"
+    [routerLink]="'/' + item.id"
+    [item]="item"
+    [itemm]="'item123'"
+  ></app-productcard>
+
+  <!-- <button (click)="getData()">get get</button> -->
+</div>

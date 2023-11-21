@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outnavbar{
+    height: 5vh;
+    background-color: blanchedalmond;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+    height: 100%;
+    
+}
+.navli:hover{
+    background-color: aqua;
+}
+.navli{
+    height: 100%;
+    list-style: none;
+    padding: 0.5rem 0.3rem;
+
+}
+.logo{
+    padding-left: 1rem;
+}
+.rightnav{
+    padding-right: 2rem;
+}
